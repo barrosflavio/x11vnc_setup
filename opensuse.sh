@@ -23,9 +23,6 @@ cat << EOF > "$FILE_NAME"
 x11vnc -display :0 -noxrecord -noxfixes -noxdamage -forever -bg -rfbauth /home/$USERNAME/.vnc/passwd
 EOF
 
-# Cria o arquivo e escreve o conteúdo
-echo -e "$SCRIPT_CONTENT" > "$FILE_NAME"
-
 # Move o arquivo para /usr/local/bin
 sudo mv startvnc.sh /usr/local/bin/
 
